@@ -11,7 +11,7 @@ export default function DocketList() {
 
   const fetchSuppliers = async () => {
     try {
-      const response = await fetch("http://localhost:1000/api/dockets/get");
+      const response = await fetch("https://docket-list.vercel.app/api/dockets/get");
       const data = await response.json();
       setTickets(data);
       console.log(data);
