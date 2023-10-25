@@ -89,7 +89,7 @@ const DocketForm = ({ setShow, fetchSuppliers }) => {
     if (isValid) {
       // Form is valid, you can proceed with submission
       // Send the form data to the server using a POST request
-      fetch("http://localhost:1000/api/dockets/add", {
+      fetch("https://docket-list.vercel.app/api/dockets/get", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
